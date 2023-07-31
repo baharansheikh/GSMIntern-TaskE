@@ -1,7 +1,6 @@
 body{
     margin: 0px;
-    background-color: white;
-    
+    background-color: white;  
 
 }
 
@@ -9,6 +8,14 @@ body{
     margin: 0px;
     display: flex;
 }
+
+div::selection{
+    background-color:#e77575;
+}
+p::selection{
+    background-color:#e77575;
+}
+
 
 .menu{
     display: flex;
@@ -20,9 +27,22 @@ body{
     font-size: 14px;
     color: white;
     font-weight: 520;
-    height: 300px;
+    height: 400px;
+    position: sticky;
+    top: 0px;
+    bottom: 0px;
 }
 
+.menulist p{
+    cursor: pointer;
+
+}
+
+.menulist p:hover{
+
+    text-decoration: underline;
+
+}
 .name{
     font-size: larger;
     font-weight: 600;
@@ -139,6 +159,7 @@ body{
     padding: 10px 20px;
     display: inline-block;
     border-radius: 30px;
+    cursor: pointer;
 
 }
 
@@ -182,8 +203,8 @@ body{
     background-color: #e83434;  
     color: white;
     border: none;
+    cursor: pointer;
 }
-
 
 
 .contact div{
